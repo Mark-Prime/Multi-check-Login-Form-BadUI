@@ -1,70 +1,10 @@
-# Getting Started with Create React App
+# Multi-Check Login Form (BAD UI)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About
+This is a login form that was made intentionally terrible as an excuse to have fun playing around while building an app in Tauri.
 
-## Available Scripts
+I tried to make it as annoying for normal users as possible while making it as nice to hackers as I could. As the name suggests, this form checks if your information is valid multiple times and while you are using it. Every time a character is typed or removed or anything at all is changed, the server is checked to see if it's accurate to anything in the system, if it isn't you get an error message. To add to the announce of getting an error pop-up every single character you type, the server also takes about a second to run this check so the page actually freezes and stops accepting input during that time. 
 
-In the project directory, you can run:
+All of that is extremely annoying to normal users but I also promised I'd have something good for the hackers out there. First of all, the username and password are both "admin" making a guessing game fairly simple. Nothing is encrypted either so you can look into the code and find the username and password hard coded in. To make it better though, even if you didn't know the username or password, the system only alerts you when you're wrong. If you're right, it doesn't alert you at all and removed the errors. That means if you don't know the password, you will as soon as you stumple upon the right guess.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please don't take any of this seriously but if you decide to, the license is MIT.
